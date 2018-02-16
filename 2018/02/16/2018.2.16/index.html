@@ -103,20 +103,24 @@
   <meta name="keywords" content="Hexo, NexT" />
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="KaKa">
-<meta property="og:url" content="https://github.com/kakaxx/kakaxx.github.io/index.html">
+<meta name="description" content="首先创建maven规范的Javaweb项目,并在pom.xml中引入相关的jar包 创建实体包,用于存放项目相关实体对象（pojo） Dao层 创建dao包,用于存放数据访问对象接口，如SecKillDao.java。 在Resources创建mapper文件夹,用于存放dao接口的xml映射文件(sql语句),用namespace表明是哪个Dao的实现 然后创建下图所示的mybatis全局配">
+<meta property="og:type" content="article">
+<meta property="og:title" content="简易ssm框架流程">
+<meta property="og:url" content="https://github.com/kakaxx/kakaxx.github.io/2018/02/16/2018.2.16/index.html">
 <meta property="og:site_name" content="KaKa">
+<meta property="og:description" content="首先创建maven规范的Javaweb项目,并在pom.xml中引入相关的jar包 创建实体包,用于存放项目相关实体对象（pojo） Dao层 创建dao包,用于存放数据访问对象接口，如SecKillDao.java。 在Resources创建mapper文件夹,用于存放dao接口的xml映射文件(sql语句),用namespace表明是哪个Dao的实现 然后创建下图所示的mybatis全局配">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-02-16T09:26:22.736Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="KaKa">
+<meta name="twitter:title" content="简易ssm框架流程">
+<meta name="twitter:description" content="首先创建maven规范的Javaweb项目,并在pom.xml中引入相关的jar包 创建实体包,用于存放项目相关实体对象（pojo） Dao层 创建dao包,用于存放数据访问对象接口，如SecKillDao.java。 在Resources创建mapper文件夹,用于存放dao接口的xml映射文件(sql语句),用namespace表明是哪个Dao的实现 然后创建下图所示的mybatis全局配">
 
 
 
 
 
 
-  <link rel="canonical" href="https://github.com/kakaxx/kakaxx.github.io/"/>
+  <link rel="canonical" href="https://github.com/kakaxx/kakaxx.github.io/2018/02/16/2018.2.16/"/>
 
 
 
@@ -125,7 +129,7 @@
     sidebar: "",
   };
 </script>
-  <title>KaKa</title>
+  <title>简易ssm框架流程 | KaKa</title>
   
 
 
@@ -172,8 +176,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -244,9 +247,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -278,9 +281,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/16/2018.2.16/" itemprop="url">简易ssm框架流程</a></h1>
+          <h1 class="post-title" itemprop="name headline">简易ssm框架流程</h1>
         
 
         <div class="post-meta">
@@ -329,9 +330,7 @@
       
 
       
-        
-          
-            <a id="more"></a>
+        <a id="more"></a>
 <ul>
 <li>首先创建maven规范的Javaweb项目,并在pom.xml中引入相关的jar包</li>
 <li>创建实体包,用于存放项目相关实体对象（pojo）</li>
@@ -378,8 +377,6 @@
 <h2 id="Spring-service配置"><a href="#Spring-service配置" class="headerlink" title="Spring-service配置"></a>Spring-service配置</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span><br><span class="line">&lt;beans xmlns=&quot;http://www.springframework.org/schema/beans&quot;</span><br><span class="line">       xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span><br><span class="line">       xmlns:context=&quot;http://www.springframework.org/schema/context&quot; xmlns:tx=&quot;http://www.springframework.org/schema/tx&quot;</span><br><span class="line">       xsi:schemaLocation=&quot;http://www.springframework.org/schema/beans</span><br><span class="line">        http://www.springframework.org/schema/beans/spring-beans.xsd</span><br><span class="line">        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd&quot;&gt;</span><br><span class="line">    &lt;!-- 扫描service包下所有使用注解的类型--&gt;</span><br><span class="line">    &lt;context:component-scan base-package=&quot;org.seckill.service&quot;/&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!-- 配置事务管理器--&gt;</span><br><span class="line">    &lt;bean id=&quot;transactionManager&quot; class=&quot;org.springframework.jdbc.datasource.DataSourceTransactionManager&quot;&gt;</span><br><span class="line">    &lt;!-- 注入数据库连接池--&gt;</span><br><span class="line">    &lt;property name=&quot;dataSource&quot; ref=&quot;dataSource&quot;/&gt;</span><br><span class="line">    &lt;/bean&gt;</span><br><span class="line">    &lt;!--配置基于注解的声明式事务 默认使用注解管理行为--&gt;</span><br><span class="line">    &lt;tx:annotation-driven transaction-manager=&quot;transactionManager&quot;/&gt;</span><br><span class="line"></span><br><span class="line">&lt;/beans&gt;</span><br></pre></td></tr></table></figure>
 <h2 id="Spring-web配置"><a href="#Spring-web配置" class="headerlink" title="Spring-web配置"></a>Spring-web配置</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span><br><span class="line">&lt;beans xmlns=&quot;http://www.springframework.org/schema/beans&quot;</span><br><span class="line">       xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span><br><span class="line">       xmlns:context=&quot;http://www.springframework.org/schema/context&quot;</span><br><span class="line">       xmlns:mvc=&quot;http://www.springframework.org/schema/mvc&quot;</span><br><span class="line">       xmlns:aop=&quot;http://www.springframework.org/schema/aop&quot;</span><br><span class="line">       xsi:schemaLocation=&quot;http://www.springframework.org/schema/beans</span><br><span class="line">    http://www.springframework.org/schema/beans/spring-beans.xsd</span><br><span class="line">    http://www.springframework.org/schema/context</span><br><span class="line">    http://www.springframework.org/schema/context/spring-context.xsd</span><br><span class="line">    http://www.springframework.org/schema/mvc</span><br><span class="line">    http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd</span><br><span class="line">    http://www.springframework.org/schema/aop</span><br><span class="line">    http://www.springframework.org/schema/aop/spring-aop.xsd&quot;&gt;</span><br><span class="line">&lt;!--配置SpringMVC --&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!--1:开启SpringMVC注解模式 --&gt;</span><br><span class="line">    &lt;!--简化配置:</span><br><span class="line">        (1)自动注册DefaultAnnotationHandlerMapping,AnnotationMethodHandlerAdapter</span><br><span class="line">        (2)提供一些列功能:数据绑定 数字和日期的format @NumberFormat @DataTimeFormat xml json默认支持</span><br><span class="line">     --&gt;</span><br><span class="line">    &lt;mvc:annotation-driven/&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!-- 2静态资源默认servlet配置-</span><br><span class="line">        (1)加入对静态资源的处理:js gif png</span><br><span class="line">        （2）允许用/做整体映射</span><br><span class="line">    --&gt;</span><br><span class="line">    &lt;mvc:default-servlet-handler/&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!-- 3配置jsp显示ViewResolver--&gt;</span><br><span class="line">    &lt;bean class=&quot;org.springframework.web.servlet.view.InternalResourceViewResolver&quot;&gt;</span><br><span class="line">        &lt;property name=&quot;viewClass&quot; value=&quot;org.springframework.web.servlet.view.JstlView&quot;/&gt;</span><br><span class="line">        &lt;property name=&quot;prefix&quot; value=&quot;/WEB-INF/jsp/&quot;/&gt;</span><br><span class="line">        &lt;property name=&quot;suffix&quot; value=&quot;.jsp&quot;/&gt;</span><br><span class="line">    &lt;/bean&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!--4配置web相关的bean --&gt;</span><br><span class="line">    &lt;context:component-scan base-package=&quot;org.seckill.web&quot;/&gt;</span><br><span class="line">&lt;/beans&gt;</span><br></pre></td></tr></table></figure>
 
-          
-        
       
     </div>
 
@@ -399,12 +396,12 @@
       
 
       
+      
+      
 
       
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -414,14 +411,19 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -442,8 +444,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -501,6 +512,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#myBatis配置"><span class="nav-number">1.</span> <span class="nav-text">myBatis配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Spring-dao配置"><span class="nav-number">2.</span> <span class="nav-text">Spring-dao配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Spring-service配置"><span class="nav-number">3.</span> <span class="nav-text">Spring-service配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Spring-web配置"><span class="nav-number">4.</span> <span class="nav-text">Spring-web配置</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -635,6 +662,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.4"></script>
+
+
 
   
 
