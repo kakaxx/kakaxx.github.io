@@ -103,20 +103,24 @@
   <meta name="keywords" content="Hexo, NexT" />
 
 
-<meta property="og:type" content="website">
+<meta name="description" content="mybatis异常问题123456789101112131415161718192021222324252627282930警告: com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@f84411 -- Acquisition Attempt Failed!!! Clearing pending acquires. While tr">
+<meta property="og:type" content="article">
 <meta property="og:title" content="KaKa">
-<meta property="og:url" content="https://github.com/kakaxx/kakaxx.github.io/index.html">
+<meta property="og:url" content="https://github.com/kakaxx/kakaxx.github.io/2018/03/07/2018.3.7/index.html">
 <meta property="og:site_name" content="KaKa">
+<meta property="og:description" content="mybatis异常问题123456789101112131415161718192021222324252627282930警告: com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@f84411 -- Acquisition Attempt Failed!!! Clearing pending acquires. While tr">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-03-07T07:32:54.233Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="KaKa">
+<meta name="twitter:description" content="mybatis异常问题123456789101112131415161718192021222324252627282930警告: com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@f84411 -- Acquisition Attempt Failed!!! Clearing pending acquires. While tr">
 
 
 
 
 
 
-  <link rel="canonical" href="https://github.com/kakaxx/kakaxx.github.io/"/>
+  <link rel="canonical" href="https://github.com/kakaxx/kakaxx.github.io/2018/03/07/2018.3.7/"/>
 
 
 
@@ -125,7 +129,7 @@
     sidebar: "",
   };
 </script>
-  <title>KaKa</title>
+  <title> | KaKa</title>
   
 
 
@@ -172,8 +176,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -244,9 +247,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -278,9 +281,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/07/2018.3.7/" itemprop="url">未命名</a></h1>
+          <h1 class="post-title" itemprop="name headline"></h1>
         
 
         <div class="post-meta">
@@ -329,19 +330,11 @@
       
 
       
-        
-          
-          
-mybatis异常问题123456789101112131415161718192021222324252627282930警告: com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@f84411 -- Acquisition Att
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/03/07/2018.3.7/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+        <hr>
+<h2 id="mybatis异常问题"><a href="#mybatis异常问题" class="headerlink" title="mybatis异常问题"></a>mybatis异常问题</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">警告: com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@f84411 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (2). Last acquisition attempt exception: </span><br><span class="line">java.sql.SQLException: Access denied for user &apos;Li&apos;@&apos;localhost&apos; (using password: YES)</span><br><span class="line">	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:998)</span><br><span class="line">	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3835)</span><br><span class="line">	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3771)</span><br><span class="line">	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:870)</span><br><span class="line">	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1659)</span><br><span class="line">	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1206)</span><br><span class="line">	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2239)</span><br><span class="line">	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2270)</span><br><span class="line">	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2069)</span><br><span class="line">	at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:794)</span><br><span class="line">	at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:44)</span><br><span class="line">	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)</span><br><span class="line">	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)</span><br><span class="line">	at sun.reflect.DelegatingConstructorAccessorImpl.__newInstance(DelegatingConstructorAccessorImpl.java:45)</span><br><span class="line">	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java)</span><br><span class="line">	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java)</span><br><span class="line">	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)</span><br><span class="line">	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)</span><br><span class="line">	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)</span><br><span class="line">	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)</span><br><span class="line">	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:135)</span><br><span class="line">	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)</span><br><span class="line">	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)</span><br><span class="line">	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)</span><br><span class="line">	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)</span><br><span class="line">	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)</span><br><span class="line">	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)</span><br><span class="line">	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)</span><br></pre></td></tr></table></figure>
+<p><strong>在dataSource配置中数据库账号密码配置正确的情况下，如果名字是root，使用<code>${username}</code>配置连接池的user属性会出现密码错误的异常，解决方法是把<code>${username}</code>更改为<code>&quot;root&quot;</code></strong></p>
+<p>```</p>
+
       
     </div>
 
@@ -361,148 +354,28 @@ mybatis异常问题123456789101112131415161718192021222324252627282930警告: co
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://github.com/kakaxx/kakaxx.github.io/2018/02/16/2018.2.16/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Li">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/headimage.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="KaKa">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/16/2018.2.16/" itemprop="url">简易ssm框架流程</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-16T17:26:44+08:00">2018-02-16</time>
+              <a href="/2018/02/16/2018.2.16/" rel="next" title="简易ssm框架流程">
+                <i class="fa fa-chevron-left"></i> 简易ssm框架流程
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-          
-
-首先创建maven规范的Javaweb项目,并在pom.xml中引入相关的jar包
-创建实体包,用于存放项目相关实体对象（pojo）
-Dao层
-创建dao包,用于存放数据访问对象接口，如SecKillDao.java。
-在Resources创建mapper文件夹,用于存放dao接口的xml映射文
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/02/16/2018.2.16/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -512,14 +385,19 @@ Dao层
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -540,8 +418,17 @@ Dao层
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -599,6 +486,22 @@ Dao层
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#mybatis异常问题"><span class="nav-number">1.</span> <span class="nav-text">mybatis异常问题</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -733,6 +636,10 @@ Dao层
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.4"></script>
+
+
 
   
 
